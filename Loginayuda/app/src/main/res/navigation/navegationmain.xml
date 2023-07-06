@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegationmain"
+    app:startDestination="@id/pantallaLogin">
+
+    <fragment
+        android:id="@+id/pantallaLogin"
+        android:name="com.example.pruebafragments.PantallaLogin"
+        android:label="fragment_pantalla_login"
+        tools:layout="@layout/fragment_pantalla_login" >
+        <action
+            android:id="@+id/action_pantallaLogin_to_pantallaRegister"
+            app:destination="@id/pantallaRegister" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaRegister"
+        android:name="com.example.pruebafragments.PantallaRegister"
+        android:label="fragment_pantalla_register"
+        tools:layout="@layout/fragment_pantalla_register" />
+</navigation>
